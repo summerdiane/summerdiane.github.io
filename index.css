@@ -50,3 +50,11 @@
 .htmlProgram{font-size: 30px; width: 28%; color: #00ffff; text-decoration:none; padding-top: 10px; display: block; float: left;}
 .javascriptProgram{font-size: 30px; width: 36%; color: #00ffff; text-decoration:none; padding-top: 10px; display: block; float: left;}
 .gameProgram{font-size: 30px; width: 36%; color: #00ffff; text-decoration:none; padding-top: 10px; display: block; float: left;}
+
+@media(min-width: 500px){
+	.container{height: 1500px; margin-top: -750px;}
+}
+@media(min-width: 1200px){
+	.container{height: 720px; margin-top: -360px;}
+}
+
