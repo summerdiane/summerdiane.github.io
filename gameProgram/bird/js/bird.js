@@ -97,7 +97,7 @@ for(var i = 0;i<=20;i++){
 	creatBg.style.cssText = 'width: 100vw;height: 100vh;float: left;'
 	bg.appendChild(creatBg);
 }
-// 6vw-50,6vw-50+100;
+
 // 碰撞检测与背景移动
 function bgMove() {
 	var count = 0;
@@ -161,7 +161,9 @@ function playAgain(){
 
 
 
-
+if(document.documentElement.msRequestFullscreen){
+            document.documentElement.msRequestFullscreen();
+          }
 
 
 
