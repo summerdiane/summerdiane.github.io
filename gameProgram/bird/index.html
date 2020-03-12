@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!-- meta标签的作用是让当前viewport的宽度等于设备的宽度，同时不允许用户手动缩放。其中 maximum-scale为允许用户的最大缩放值，user-scalable为是否允许用户进行缩放，yes(默认)代表允许，no(0)代表不允许，两者结合使用可以阻止页面被放大，少一项都达不到效果。 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>bird</title>
+		<link rel="stylesheet" type="text/css" href="css/bird.css"/>
+	</head>
+	<body>
+		<div id="mainBox">
+			<div id="gameBox" hidden="true">
+				<!-- 阻止移动端点击查看图片 -->
+				<div id="bg" onclick="return false"></div>
+				<div id="birdBox">
+					<img src="img/bird.png" >
+				</div>
+				<div id="over" hidden="true">Game Over</div>
+				<div id="again" hidden="true">Play Again</div>
+				<div id="gameCount">积分：0</div>
+			</div>
+			<div id="startBox">
+				<img src="img/startBg.jpg" class="startBg" onclick="return false">
+				<div class="startTxt">沙雕鸟</div>
+				<img src="img/bird.png" class="startLogo0">
+				<img src="img/bird.png" class="startLogo1">
+				<div id="start">Game Start</div>
+			</div>
+		</div>
+		
+		<script src="js/bird.js"></script>
+	</body>
+</html>
