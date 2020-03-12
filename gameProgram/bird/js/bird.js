@@ -15,8 +15,8 @@ var birdFlyTimer;
 var bgMoveTimer;
 var bgRemove = true;
 var isAgain = false;
-var vhNum = document.body.clientHeight/10;
-var vwNum = document.body.clientWidth/10;
+var vhNum = window.innerHeight/10;
+var vwNum = window.innerWidth/10;
 
 // 游戏开始
 start.onclick = gameStart;
